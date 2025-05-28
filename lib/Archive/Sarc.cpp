@@ -171,9 +171,11 @@ void Sarc::Extract(const char* output_dir) {
         u32 end = nodes[i]->mEnd;
         u32 size_of_file = end - beginning;
 
-        input.seekg(beginning, std::ios::beg);
+        int beginning_with_header = beginning + charArrToInt(Beginning_data);
 
-        char buffer_size[size_of_file];
+        input.seekg(beginning_with_header, std::ios::beg);
+
+        char buffer_size[size_of_file + 1];
 
         input.read(buffer_size, size_of_file);
         output.write(buffer_size, size_of_file);

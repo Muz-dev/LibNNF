@@ -1,3 +1,0 @@
-/home/larbe/CLionProjects/LibNNF/cmake-build-debug/CMakeFiles/LibNNF.dir
-/home/larbe/CLionProjects/LibNNF/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/larbe/CLionProjects/LibNNF/cmake-build-debug/CMakeFiles/rebuild_cache.dir
